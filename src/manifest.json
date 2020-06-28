@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Speed test extension",
+  "homepage_url": "http://localhost/",
+  "description": "This is an extension to test the JS speed of an extension",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "64": "icons/64.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "HelloWorld",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png"
+    }
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "http://*/",
+    "https://*/"
+  ]
+}
